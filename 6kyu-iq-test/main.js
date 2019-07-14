@@ -21,7 +21,7 @@ function iqTest(numbers){
   return odd.length < even.length ? (numbers.indexOf(odd[0]) + 1) : (numbers.indexOf(even[0]) + 1);
 }
 
-//Notes on methods used in this challenge
+//Notes on methods used in this challenge.
 
 // .map = method creates a new array with the results of calling a provided function on every element in the calling array.
 // .filter = method creates a new array with all elements that pass the test implemented by the provided function.
