@@ -2,7 +2,12 @@
 //
 // To make this challange harder and to promp the challenger to read up about coercion I have disabled some of the built in methods including .toString(), .join(), .split(), parseInt and .Number().
 
-//solution
+//Solution
+function add(a, b){
+  return a == b
+}
+
+//Alternative solution
 function add(a, b){
   if (a == b)
   return true //same character but different data types
