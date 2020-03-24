@@ -10,9 +10,13 @@
 // Assume: margin >= 0
 // Tip: Some languages have a way to make arguments optional.
 
-
+//Solution One
 function closeCompare(a, b, margin = 0){
   if (Math.abs(a - b) <= margin) return 0
   if (a < b) return -1
   return 1
 }
+
+//Solution Two
+const closeCompare = (a, b, margin = 0) =>
+  Math.abs(a - b) <= margin ? 0 : Math.sign(a - b)
