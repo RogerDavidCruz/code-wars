@@ -1,22 +1,14 @@
-// 6 kyu - Free pizza
-// https://www.codewars.com/kata/595910299197d929a10005ae/train/javascript
+// 8 kyu - Abbreviate a Two Word Name
+// https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/javascript
 
-// In an attempt to boost sales, the manager of the pizzeria you work at has devised a pizza rewards system: if you already made at least 5 orders of at least 20 dollars, you get a free 12 inch pizza with 3 toppings of your choice.
+// Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+// The output should be two capital letters with a dot separating them.
+// It should look like this:
 //
-// However, the rewards system may change in the future. Your manager wants you to implement a function that, given a dictionary of customers, a minimum number of orders and a minimum order value, returns a set of the customers who are eligible for a reward.
-//
-// Customers in the dictionary are represented as:
-//
-// { 'customerName' : [list_of_order_values_as_integers] }
-// See example test case for more details.
+// Sam Harris => S.H
+// Patrick Feeney => P.F
 
-function pizzaRewards(customers, minOrders, minPrice) {
-    let positiveCustomers = [];
-
-    for (let pizza in customers) {
-        if (customers[pizza].filter(e => e >= minPrice).length >= minOrders) {
-            positiveCustomers.push(pizza);
-        }
-    }
-    return positiveCustomers;
-}
+const abbrevName = (name) =>
+  name.split(' ')
+  .map((string) => string[0].toUpperCase())
+  .join('.');
