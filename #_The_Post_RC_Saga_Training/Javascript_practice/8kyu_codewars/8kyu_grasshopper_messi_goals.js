@@ -19,8 +19,23 @@
 // copaDelReyGoals
 // Create a fourth variable named totalGoals (javascript, C#, Java) or total_goals (python, ruby). totalGoals/total_goals should store the sum of all of Messi's goals for this year.
 
+// Solution # 1
+
 var laLigaGoals = 43
 var championsLeagueGoals = 10
 var copaDelReyGoals = 5
 
 var totalGoals = (laLigaGoals + championsLeagueGoals + copaDelReyGoals)
+
+//Solution #2
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+
+//prep
+
+//p: 3 numbers
+//r: 1 number
+//e: p: 43, 10, 5, r: 58
+//p: add each parameter using the + operator. 
