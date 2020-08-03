@@ -12,6 +12,9 @@
 // solve('1234',3) = 4.
 
 function solve(str,k){
-  let result = parseInt(str.split(k)[1])
-  return result
+let array=[];
+  for (let i=0; i<str.length; i++){
+    array.push(str.slice(i, i+(str.length-k)))
+  }
+  return Math.max(...array)
 }
