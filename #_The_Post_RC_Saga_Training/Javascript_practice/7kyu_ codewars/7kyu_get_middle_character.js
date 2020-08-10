@@ -13,7 +13,7 @@ function getMiddle(s) {
   for (let i = 0; i < s.length; i++) {
     if(s.length % 2 == 0){
       let medium = (s.length/2) - 1;
-      let additional = medium + 1
+      let additional = medium + 1;
       let evenResult = s.charAt(medium).concat(s.charAt(additional));
       return evenResult;
     } else{
