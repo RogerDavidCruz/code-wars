@@ -5,5 +5,5 @@
 // But maybe the number is already negative?
 
 function makeNegative(num) {
-  return num % 2 === 0 ? num*-1 : num;
+  return Math.abs(num)*-1;
 }
