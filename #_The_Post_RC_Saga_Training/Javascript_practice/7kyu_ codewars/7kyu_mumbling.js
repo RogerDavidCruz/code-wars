@@ -5,5 +5,5 @@
 // write function accum:
 
 function accum(s) {
-  return s.split('').map((currentValue, index) => (currentValue.toUpperCase() + currentValue.toLowerCase().repeat(index))).join('-');
+  return s.split('').map((value, index) => (value.toUpperCase() + value.toLowerCase().repeat(index))).join('-');
 }
