@@ -15,3 +15,15 @@ function logicalCalc(array, op){
 const reducerForAND = (accumulator, currentValue) => accumulator && currentValue;
 const reducerForOR = (accumulator, currentValue) => accumulator || currentValue;
 const reducerForXOR = (accumulator, currentValue) => accumulator !== currentValue;
+
+//OOP alternative solution approach
+
+function logicalCalc(array, op){
+  return array.reduce(logicalOperators[op])
+}
+
+const logicalOperators = {
+  'AND': (a,b) => a && b,
+  'OR' : (a,b) => a || b,
+  'XOR': (a,b) => a !== b,
+}
